@@ -1,43 +1,43 @@
 [
-    {
-        "section":"Contacts",
-        "data":
-       [ {
-            "icon":"User",
-            "heading":"Natali Craig",
-            "subHead":"",
-            "rounded":"full"
-        },
-        {
-            "icon":"User",
-            "heading":"Drew Cano",
-            "subHead":"",
-            "rounded":"full"
-        },
-        {
-            "icon":"User",
-            "heading":"Orlando Diggs",
-            "subHead":"",
-            "rounded":"full"
-        },
-        {
-            "icon":"User",
-            "heading":"Andi Lane",
-            "subHead":"",
-            "rounded":"full"
-        },
-        {
-            "icon":"User",
-            "heading":"Kate Morrison",
-            "subHead":"",
-            "rounded":"full"
-        },
-        {
-            "icon":"User",
-            "heading":"Koray Okumus",
-            "subHead":"",
-            "rounded":"full"
-        }
+  {
+    "section": "Contacts",
+    "data": [
+      {
+        "icon": "User",
+        "heading": "Natali Craig",
+        "subHead": "",
+        "rounded": "full"
+      },
+      {
+        "icon": "User",
+        "heading": "Drew Cano",
+        "subHead": "",
+        "rounded": "full"
+      },
+      {
+        "icon": "User",
+        "heading": "Orlando Diggs",
+        "subHead": "",
+        "rounded": "full"
+      },
+      {
+        "icon": "User",
+        "heading": "Andi Lane",
+        "subHead": "",
+        "rounded": "full"
+      },
+      {
+        "icon": "User",
+        "heading": "Kate Morrison",
+        "subHead": "",
+        "rounded": "full"
+      },
+      {
+        "icon": "User",
+        "heading": "Koray Okumus",
+        "subHead": "",
+        "rounded": "full"
+      }
     ]
-    }
+  }
 ]

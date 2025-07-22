@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 
-import { cn } from "@/lib/utils"
-import { useMediaQuery } from "@/hooks/use-media-query"
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -12,7 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -22,22 +22,25 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { PlusIcon } from "lucide-react"
+} from "@/components/ui/drawer";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { PlusIcon } from "lucide-react";
 
 export function AddOrderDrawer() {
-  const [open, setOpen] = React.useState(false)
-  const isDesktop = useMediaQuery("(min-width: 768px)")
+  const [open, setOpen] = React.useState(false);
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-            
-          <Button variant="outline" className=" border-0  dark:bg-transparent hover:cursor-pointer">
-            <PlusIcon  className="hover:cursor-pointer"/></Button>
+          <Button
+            variant="outline"
+            className=" border-0  dark:bg-transparent hover:cursor-pointer"
+          >
+            <PlusIcon className="hover:cursor-pointer" />
+          </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -50,7 +53,7 @@ export function AddOrderDrawer() {
           <ProfileForm />
         </DialogContent>
       </Dialog>
-    )
+    );
   }
 
   return (
@@ -73,7 +76,7 @@ export function AddOrderDrawer() {
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
-  )
+  );
 }
 
 function ProfileForm({ className }) {
@@ -89,5 +92,5 @@ function ProfileForm({ className }) {
       </div>
       <Button type="submit">Save changes</Button>
     </form>
-  )
+  );
 }

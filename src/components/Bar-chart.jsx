@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
+import { TrendingUp } from "lucide-react";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
   Card,
@@ -10,18 +10,17 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 import {
-  
   ChartContainer,
   ChartLegend,
   ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/components/ui/chart";
 
-export const description = "A stacked bar chart with a legend"
+export const description = "A stacked bar chart with a legend";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -30,7 +29,7 @@ const chartData = [
   { month: "April", desktop: 73, mobile: 190 },
   { month: "May", desktop: 209, mobile: 130 },
   { month: "June", desktop: 214, mobile: 140 },
-]
+];
 
 const chartConfig = {
   desktop: {
@@ -49,17 +48,20 @@ const chartConfig = {
       dark: "#687681",
     },
   },
-} 
+};
 
 export function ChartBarStacked() {
   return (
-    <Card className='w-108 h-63 '>
-      <CardHeader className=''>
-        <CardTitle className='text-left  '>Projections vs Actuals</CardTitle>
+    <Card className="w-108 h-63 ">
+      <CardHeader className="">
+        <CardTitle className="text-left  ">Projections vs Actuals</CardTitle>
         {/* <CardDescription className='text-left'>January - June 2025</CardDescription> */}
       </CardHeader>
-      <CardContent className=' pl-0'>
-        <ChartContainer config={chartConfig} className="min-h-[165px]  h-42 w-full ">
+      <CardContent className=" pl-0">
+        <ChartContainer
+          config={chartConfig}
+          className="min-h-[165px]  h-42 w-full "
+        >
           <BarChart accessibilityLayer data={chartData} width={10}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -69,10 +71,7 @@ export function ChartBarStacked() {
               axisLine={true}
               tickFormatter={(value) => value.slice(0, 3)}
             />
-            <YAxis
-            tickLine={false}
-            tickMargin={10}
-            axisLine={true}  />
+            <YAxis tickLine={false} tickMargin={10} axisLine={true} />
             <ChartTooltip content={<ChartTooltipContent />} />
             {/* <ChartLegend content={<ChartLegendContent />} /> */}
             <Bar
@@ -81,7 +80,6 @@ export function ChartBarStacked() {
               fill="var(--color-desktop)"
               // radius={[0, 0, 4, 4]}
               barSize={25}
-              
             />
             <Bar
               dataKey="mobile"
@@ -102,5 +100,5 @@ export function ChartBarStacked() {
         </div> */}
       </CardFooter>
     </Card>
-  )
+  );
 }
