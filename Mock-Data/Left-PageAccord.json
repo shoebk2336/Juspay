@@ -1,24 +1,22 @@
 [
-    {
-        "heading":"User Profile",
-        "icon":"SquareUserIcon"
-       
-    },
-    {
-        "heading":"Account",
-        "icon":"Users2Icon"
-    },
-    {
-        "heading":"Corporate",
-        "icon":"Boxes"
-    },
-    {
-        "heading":"Blog",
-        "icon":"NotebookPen"
-    },
-    {
-        "heading":"Social",
-        "icon":"MessagesSquareIcon"
-    }
-   
+  {
+    "heading": "User Profile",
+    "icon": "SquareUserIcon"
+  },
+  {
+    "heading": "Account",
+    "icon": "Users2Icon"
+  },
+  {
+    "heading": "Corporate",
+    "icon": "Boxes"
+  },
+  {
+    "heading": "Blog",
+    "icon": "NotebookPen"
+  },
+  {
+    "heading": "Social",
+    "icon": "MessagesSquareIcon"
+  }
 ]

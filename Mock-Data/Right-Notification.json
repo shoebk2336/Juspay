@@ -1,30 +1,31 @@
 [
-    {
-        "section":"Notification",
-        "data":
-       [ {
-            "icon":"Bug",
-            "heading":"You have a bug that needs...",
-            "subHead":"Just now",
-            "rounded":"sm"
-        },
-        {
-            "icon":"User",
-            "heading":"New user registered",
-            "subHead":"59 minutes ago",
-            "rounded":"sm"
-        },
-        {
-            "icon":"Bug",
-            "heading":"You have a bug that needs...",
-            "subHead":"12 hours ago",
-            "rounded":"sm"
-        },
-        {
-            "icon":"Cast",
-            "heading":"Andi Lane subscribed to you",
-            "subHead":"Today, 11:59 AM",
-            "rounded":"sm"
-        }]
-    }
+  {
+    "section": "Notification",
+    "data": [
+      {
+        "icon": "Bug",
+        "heading": "You have a bug that needs...",
+        "subHead": "Just now",
+        "rounded": "sm"
+      },
+      {
+        "icon": "User",
+        "heading": "New user registered",
+        "subHead": "59 minutes ago",
+        "rounded": "sm"
+      },
+      {
+        "icon": "Bug",
+        "heading": "You have a bug that needs...",
+        "subHead": "12 hours ago",
+        "rounded": "sm"
+      },
+      {
+        "icon": "Cast",
+        "heading": "Andi Lane subscribed to you",
+        "subHead": "Today, 11:59 AM",
+        "rounded": "sm"
+      }
+    ]
+  }
 ]

@@ -1,5 +1,5 @@
-import { Link } from "react-router"
-import { SlashIcon } from "lucide-react"
+import { Link } from "react-router";
+import { SlashIcon } from "lucide-react";
 
 import {
   Breadcrumb,
@@ -8,7 +8,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+} from "@/components/ui/breadcrumb";
 
 export function BreadcrumbWithCustomSeparator() {
   return (
@@ -35,5 +35,5 @@ export function BreadcrumbWithCustomSeparator() {
         </BreadcrumbItem> */}
       </BreadcrumbList>
     </Breadcrumb>
-  )
+  );
 }

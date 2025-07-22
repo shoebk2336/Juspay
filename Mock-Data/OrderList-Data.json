@@ -1,93 +1,92 @@
 [
-    {
-      "order_id": "#CMP981",
-      "user": "Natal Craig",
-      "avatar":"/Avatar/female1.png",
-      "project": "Landing Page",
-      "address": "Meadow Lane Oakland",
-      "date": "Just now",
-      "status": "In Progress"
-    },
-    {
-      "order_id": "#CMP982",
-      "user": "Kate Morrison",
-      "avatar":"/Avatar/male1.png",
-      "project": "CRM Admin pages",
-      "address": "Larry San Francisco",
-      "date": "A minute ago",
-      "status": "Complete"
-    },
-    {
-      "order_id": "#CMP983",
-      "user": "Drew Cano",
-      "avatar":"/Avatar/female2.png",
-      "project": "Client Project",
-      "address": "Bagwell Avenue Ocala",
-      "date": "1 hour ago",
-      "status": "Pending"
-    },
-    {
-      "order_id": "#CMP984",
-      "user": "Orlando Diggs",
-      "avatar":"/Avatar/male2.png",
-      "project": "Admin Dashboard",
-      "address": "Washburn Baton Rouge",
-      "date": "Yesterday",
-      "status": "Approved"
-    },
-    {
-      "order_id": "#CMP985",
-      "user": "Andi Lane",
-      "avatar":"/Avatar/female3.png",
-      "project": "App Landing Page",
-      "address": "Nest Lane Olivette",
-      "date": "Feb 2, 2023",
-      "status": "Rejected"
-    },
-    {
-      "order_id": "#CMP981",
-      "user": "Natal Craig",
-      "avatar":"/Avatar/male1.png",
-      "project": "Landing Page",
-      "address": "Meadow Lane Oakland",
-      "date": "Just now",
-      "status": "In Progress"
-    },
-    {
-      "order_id": "#CMP982",
-      "user": "Kate Morrison",
-      "avatar":"/Avatar/female1.png",
-      "project": "CRM Admin pages",
-      "address": "Larry San Francisco",
-      "date": "A minute ago",
-      "status": "Complete"
-    },
-    {
-      "order_id": "#CMP983",
-      "user": "Drew Cano",
-      "avatar":"/Avatar/male2.png",
-      "project": "Client Project",
-      "address": "Bagwell Avenue Ocala",
-      "date": "1 hour ago",
-      "status": "Pending"
-    },
-    {
-      "order_id": "#CMP984",
-      "user": "Orlando Diggs",
-      "avatar":"/Avatar/female2.png",
-      "project": "Admin Dashboard",
-      "address": "Washburn Baton Rouge",
-      "date": "Yesterday",
-      "status": "Approved"
-    },
-    {
-      "order_id": "#CMP985",
-      "user": "Andi Lane",
-      "avatar":"/Avatar/female3.png",
-      "project": "App Landing Page",
-      "address": "Nest Lane Olivette",
-      "date": "Feb 2, 2023",
-      "status": "Rejected"
-    }
-  ]
-  
+  {
+    "order_id": "#CMP981",
+    "user": "Natal Craig",
+    "avatar": "/Avatar/female1.png",
+    "project": "Landing Page",
+    "address": "Meadow Lane Oakland",
+    "date": "Just now",
+    "status": "In Progress"
+  },
+  {
+    "order_id": "#CMP982",
+    "user": "Kate Morrison",
+    "avatar": "/Avatar/male1.png",
+    "project": "CRM Admin pages",
+    "address": "Larry San Francisco",
+    "date": "A minute ago",
+    "status": "Complete"
+  },
+  {
+    "order_id": "#CMP983",
+    "user": "Drew Cano",
+    "avatar": "/Avatar/female2.png",
+    "project": "Client Project",
+    "address": "Bagwell Avenue Ocala",
+    "date": "1 hour ago",
+    "status": "Pending"
+  },
+  {
+    "order_id": "#CMP984",
+    "user": "Orlando Diggs",
+    "avatar": "/Avatar/male2.png",
+    "project": "Admin Dashboard",
+    "address": "Washburn Baton Rouge",
+    "date": "Yesterday",
+    "status": "Approved"
+  },
+  {
+    "order_id": "#CMP985",
+    "user": "Andi Lane",
+    "avatar": "/Avatar/female3.png",
+    "project": "App Landing Page",
+    "address": "Nest Lane Olivette",
+    "date": "Feb 2, 2023",
+    "status": "Rejected"
+  },
+  {
+    "order_id": "#CMP981",
+    "user": "Natal Craig",
+    "avatar": "/Avatar/male1.png",
+    "project": "Landing Page",
+    "address": "Meadow Lane Oakland",
+    "date": "Just now",
+    "status": "In Progress"
+  },
+  {
+    "order_id": "#CMP982",
+    "user": "Kate Morrison",
+    "avatar": "/Avatar/female1.png",
+    "project": "CRM Admin pages",
+    "address": "Larry San Francisco",
+    "date": "A minute ago",
+    "status": "Complete"
+  },
+  {
+    "order_id": "#CMP983",
+    "user": "Drew Cano",
+    "avatar": "/Avatar/male2.png",
+    "project": "Client Project",
+    "address": "Bagwell Avenue Ocala",
+    "date": "1 hour ago",
+    "status": "Pending"
+  },
+  {
+    "order_id": "#CMP984",
+    "user": "Orlando Diggs",
+    "avatar": "/Avatar/female2.png",
+    "project": "Admin Dashboard",
+    "address": "Washburn Baton Rouge",
+    "date": "Yesterday",
+    "status": "Approved"
+  },
+  {
+    "order_id": "#CMP985",
+    "user": "Andi Lane",
+    "avatar": "/Avatar/female3.png",
+    "project": "App Landing Page",
+    "address": "Nest Lane Olivette",
+    "date": "Feb 2, 2023",
+    "status": "Rejected"
+  }
+]

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,17 +11,21 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { ArrowUpDownIcon, ListFilterIcon } from "lucide-react"
+} from "@/components/ui/dropdown-menu";
+import { ArrowUpDownIcon, ListFilterIcon } from "lucide-react";
 
 export function OrderSortDropdown() {
-  const [position, setPosition] = React.useState("bottom")
+  const [position, setPosition] = React.useState("bottom");
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className=" border-0  dark:bg-transparent hover:cursor-pointer">
-            <ArrowUpDownIcon/></Button>
+        <Button
+          variant="outline"
+          className=" border-0  dark:bg-transparent hover:cursor-pointer"
+        >
+          <ArrowUpDownIcon />
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         {/* <DropdownMenuLabel>Panel Position</DropdownMenuLabel> */}
@@ -33,5 +37,5 @@ export function OrderSortDropdown() {
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

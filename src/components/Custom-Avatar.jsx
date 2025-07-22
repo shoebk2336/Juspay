@@ -1,14 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import React from 'react'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import React from "react";
 
-const CustomAvatar = ({data:avatar}) => {
-    
+const CustomAvatar = ({ data: avatar }) => {
   return (
     <Avatar>
-    <AvatarImage src={avatar} />
-    <AvatarFallback>CN</AvatarFallback>
-  </Avatar>
-  )
-}
+      <AvatarImage src={avatar} />
+      <AvatarFallback>CN</AvatarFallback>
+    </Avatar>
+  );
+};
 
-export default CustomAvatar
+export default CustomAvatar;

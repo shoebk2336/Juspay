@@ -1,13 +1,13 @@
-import Header from '@/components/Header'
-import  { CustomDataBox } from '@/components/Icon-text'
-import LeftsideBar from '@/components/Left-sideBar'
-import Notification from '../../Mock-Data/Right-Notification.json'
-import Activities from '../../Mock-Data/Right-Activities.json'
-import Contacts from '../../Mock-Data/Right-Contacts.json'
+import Header from "@/components/Header";
+import { CustomDataBox } from "@/components/Icon-text";
+import LeftsideBar from "@/components/Left-sideBar";
+import Notification from "../../Mock-Data/Right-Notification.json";
+import Activities from "../../Mock-Data/Right-Activities.json";
+import Contacts from "../../Mock-Data/Right-Contacts.json";
 
-import React from 'react'
-import { Outlet } from 'react-router'
-import CollapseNav from '@/components/collapse-Nav'
+import React from "react";
+import { Outlet } from "react-router";
+import CollapseNav from "@/components/collapse-Nav";
 
 const Applayout = () => {
   return (
@@ -22,15 +22,13 @@ const Applayout = () => {
         </div>
       </div>
       {/* right sidebar */}
-      <div className='border-l h-300 w-70 p-4 flex flex-col gap-12 '>
-        <CustomDataBox data={Notification}/>
-        <CustomDataBox data={Activities}/>
-        <CustomDataBox data={Contacts}/>
-
-        
+      <div className="border-l h-300 w-70 p-4 flex flex-col gap-12 ">
+        <CustomDataBox data={Notification} />
+        <CustomDataBox data={Activities} />
+        <CustomDataBox data={Contacts} />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Applayout
+export default Applayout;
