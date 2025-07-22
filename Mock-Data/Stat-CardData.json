@@ -1,0 +1,30 @@
+[
+    {
+        "id":0,
+        "title":"Customers",
+        "score":"3,781",
+        "percentage":"+11.01"
+        
+    },
+    {
+        "id":1,
+        "title":"Orders",
+        "score":"1,219",
+        "percentage":"-0.03"
+        
+    },
+    {
+        "id":2,
+        "title":"Revenue",
+        "score":"$695",
+        "percentage":"+15.03"
+        
+    },
+    {
+        "id":3,
+        "title":"Growth",
+        "score":"30.1",
+        "percentage":"+6.08"
+        
+    }
+]

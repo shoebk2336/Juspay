@@ -1,0 +1,15 @@
+[
+    {
+        "heading":"Ecommerce",
+        "icon":"ShoppingBagIcon"
+    },
+    {
+        "heading":"Projects",
+        "icon":"Folder"
+    },
+    {
+        "heading":"Online Courses",
+        "icon":"BookOpen"
+    }
+   
+]
