@@ -21,8 +21,10 @@ import { CustomStrip } from "@/components/custom-Strip";
 import { TableDemo } from "@/components/ui/Table";
 import { ChartRadialStacked } from "@/components/Radial-chart";
 import { DotIcon } from "lucide-react";
+import { useParams } from "react-router";
 
 const LandingPage = () => {
+   
   const cardColor = ["#E3F5FF", "#E5ECF6"];
 
   const TotalSales = [
@@ -49,7 +51,8 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-4 my-10  mx-2  ">
+    <div className=" flex flex-col gap-4 w-223   ">
+      <h1 className="text-sm font-bold text-left mt-4">eCommerce</h1>
       <div className="flex justify-between">
         <div className="grid grid-cols-2 w-108 h-63 gap-6 ">
           {stats?.map((stat, index) => {

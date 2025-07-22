@@ -16,7 +16,7 @@ import LeftPageAccord from "../../Mock-Data/Left-PageAccord.json";
 import { Link } from "react-router";
 const LeftsideBar = () => {
   return (
-    <div className="hidden sm:block w-54 h-300 border-r border-input p-4">
+    <div className="hidden sm:block w-53 h-300 border-r border-input p-2">
       <div className=" flex items-center gap-2">
         <Avatar className="aspect-square w-8 h-8 ">
           <AvatarImage src="https://github.com/shadcn.png" />
@@ -27,17 +27,17 @@ const LeftsideBar = () => {
       {/* favourite section */}
       <div className=" grid gap-2 mt-6">
         <div className="flex gap-6 hover:cursor-pointer">
-          <h1 className="text-sm text-gray-400">Favorites</h1>
-          <h1 className="text-sm text-gray-600">Recently</h1>
+          <h1 className="text-[12px] text-gray-400">Favorites</h1>
+          <h1 className="text-[12px] text-gray-600">Recently</h1>
         </div>
         <Link to="/">
-          <h1 className="hover:cursor-pointer flex text-sm text-left">
+          <h1 className=" hover:cursor-pointer flex text-[12px] text-left">
             <DotIcon size={24} />
             Dashboard
           </h1>
         </Link>
         <Link to="/order">
-          <h1 className="hover:cursor-pointer flex text-sm text-left">
+          <h1 className="hover:cursor-pointer flex text-[12px] text-left">
             <DotIcon size={24} />
             Order List
           </h1>
@@ -47,8 +47,8 @@ const LeftsideBar = () => {
       <div className="grid gap-4 mt-6">
         <h1 className=" text-sm text-gray-400 text-left">Dashboards</h1>
         <div className="grid gap-6">
-          <h1 className=" hover:cursor-pointer px-5 flex items-center gap-2 text-sm ">
-            <ChartPie className="rotate-270" size={20} />
+          <h1 className=" hover:cursor-pointer px-5 flex items-center gap-2 text-[12px] ">
+            <ChartPie className="rotate-270" size={16} />
             Defaults
           </h1>
           {LeftDashAccord?.map((accord, index) => (

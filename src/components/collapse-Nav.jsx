@@ -16,13 +16,13 @@ const CollapseNav = ({ data }) => {
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-left gap-1 p-0 hover:cursor-pointer hover:no-underline ">
             <div className=" w-full flex gap-1">
-              <Icon size={20} />
+              <Icon size={16} />
 
-              <h1 className="">{heading}</h1>
+              <h1 className="text-[12px]">{heading}</h1>
             </div>
           </AccordionTrigger>
           <AccordionContent className="border-0">
-            <ul className="ml-10 mt-4 grid gap-4 hover:cursor-pointer space-y-1 text-left">
+            <ul className="text-[12px] ml-10 mt-4 grid gap-4 hover:cursor-pointer space-y-1 text-left">
               <li>Overview</li>
               <li>Projects</li>
               <li>Campaigns</li>

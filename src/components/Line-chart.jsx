@@ -55,12 +55,12 @@ export function ChartLineMultiple() {
         <CardTitle className="text-left">Revenue</CardTitle>
         <div className="flex h-5 items-center space-x-6 text-sm ml-4">
           <Separator orientation="vertical" />
-          <div className="flex items-center">
+          <div className=" gap-2 flex items-center">
             <Dot size={30} color="#A8C5DA" />
             Current Week <span className="font-bold">$58,211</span>
           </div>
           {/* <Separator orientation="vertical" /> */}
-          <div className="flex items-center">
+          <div className="flex gap-2 items-center">
             <DotIcon size={30} color="#C6C7F8" />
             Previous Week <span className="font-bold">$68,786</span>
           </div>

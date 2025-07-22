@@ -22,7 +22,7 @@ const OrderList = () => {
     FilteredOrders.length > 0 ? FilteredOrders : AllOrders;
 
   return (
-    <div className="p-2">
+    <div className="p-2 w-223">
       <h1 className="text-left text-sm font-bold mb-8">Order List</h1>
       {/* sub-Nav section */}
       <div className="grid gap-4">
