@@ -18,11 +18,11 @@ const LeftsideBar = () => {
   return (
     <div className="hidden sm:block w-53 h-300 border-r border-input p-2">
       <div className=" flex items-center gap-2">
-        <Avatar className="aspect-square w-8 h-8 ">
+        <Avatar className="aspect-square w-6 h-6 ">
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <h1 className="text-sm font-bold">Shoeb Khan</h1>
+        <h1 className="text-sm font-bold">SHOEB KHAN</h1>
       </div>
       {/* favourite section */}
       <div className=" grid gap-2 mt-6">

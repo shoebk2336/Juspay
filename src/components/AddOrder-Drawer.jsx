@@ -37,18 +37,18 @@ export function AddOrderDrawer() {
         <DialogTrigger asChild>
           <Button
             variant="outline"
-            className=" border-0  dark:bg-transparent hover:cursor-pointer"
+            className=" border-0 shadow-none bg-transparent  dark:bg-transparent hover:cursor-pointer"
           >
             <PlusIcon className="hover:cursor-pointer" />
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="">
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
+            <DialogTitle>Add order details</DialogTitle>
+            {/* <DialogDescription>
               Make changes to your profile here. Click save when you&apos;re
               done.
-            </DialogDescription>
+            </DialogDescription> */}
           </DialogHeader>
           <ProfileForm />
         </DialogContent>
@@ -57,16 +57,21 @@ export function AddOrderDrawer() {
   }
 
   return (
-    <Drawer open={open} onOpenChange={setOpen}>
+    <Drawer className="" open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <Button variant="outline"
+        className="border-0  dark:bg-transparent hover:cursor-pointer"
+        >
+        <PlusIcon className="hover:cursor-pointer" />
+
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="text-left">
-          <DrawerTitle>Edit profile</DrawerTitle>
-          <DrawerDescription>
+          <DrawerTitle>Add order details</DrawerTitle>
+          {/* <DrawerDescription>
             Make changes to your profile here. Click save when you&apos;re done.
-          </DrawerDescription>
+          </DrawerDescription> */}
         </DrawerHeader>
         <ProfileForm className="px-4" />
         <DrawerFooter className="pt-2">
@@ -81,16 +86,36 @@ export function AddOrderDrawer() {
 
 function ProfileForm({ className }) {
   return (
-    <form className={cn("grid items-start gap-6", className)}>
-      <div className="grid gap-3">
-        <Label htmlFor="email">Email</Label>
-        <Input type="email" id="email" defaultValue="shadcn@example.com" />
+    <form className={cn("grid items-start  gap-6", className)}>
+      <div className="flex gap-4 justify-between">
+        <div className="w-30 grid gap-3">
+          <Label htmlFor="orderID">Order ID</Label>
+          <Input type="orderID" id="orderID" placeholder="#CMP981" />
+        </div>
+        <div className="w-full grid gap-3">
+          <Label htmlFor="username">Username</Label>
+          <Input id="username" placeholder="Username" />
+        </div>
       </div>
-      <div className="grid gap-3">
-        <Label htmlFor="username">Username</Label>
-        <Input id="username" defaultValue="@shadcn" />
+      <div className="w-full grid gap-3">
+        <Label htmlFor="project">Project</Label>
+        <Input id="project" placeholder="Project" />
       </div>
-      <Button type="submit">Save changes</Button>
+      <div className="w-full grid gap-3">
+        <Label htmlFor="address">Address</Label>
+        <Input id="address" placeholder="Address" />
+      </div>
+      <div className="flex gap-2">
+        <div className="w-1/2 grid gap-3">
+          <Label htmlFor="date">Date</Label>
+          <Input id="date" placeholder="Date" />
+        </div>
+        <div className="w-1/2 grid gap-3">
+          <Label htmlFor="address">Address</Label>
+          <Input id="address" placeholder="Address" />
+        </div>
+      </div>
+      <Button type="Add Order">Save changes</Button>
     </form>
   );
 }

@@ -39,7 +39,7 @@ export function OrderFilterDropdown() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className=" border-0  dark:bg-transparent hover:cursor-pointer"
+          className=" border-0 shadow-none bg-transparent  dark:bg-transparent hover:cursor-pointer"
         >
           <ListFilterIcon />
         </Button>

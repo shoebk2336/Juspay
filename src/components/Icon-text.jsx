@@ -3,6 +3,7 @@ import * as Icons from "lucide-react";
 
 import React from "react";
 import { Separator } from "./ui/separator";
+import { cn } from "@/lib/utils";
 
 const Icontext = ({ data }) => {
   const { icon, rounded, heading, subHead } = data;
@@ -27,10 +28,10 @@ const Icontext = ({ data }) => {
 
 // export default Icontext
 
-export const CustomDataBox = ({ data: Data }) => {
+export const CustomDataBox = ({ data: Data ,className}) => {
   const { section, data } = Data[0];
   return (
-    <div className="self-start  mt-0 flex flex-col  gap-4 ">
+    <div className={cn(`self-start  mt-0 flex flex-col  gap-4 `,className)}>
       <h1 className="text-left font-bold text-sm">{section}</h1>
       <div className=" grid gap-4">
         {data?.map((note, index) => (

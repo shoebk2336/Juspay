@@ -11,7 +11,7 @@ import CollapseNav from "@/components/collapse-Nav";
 import { useParams } from "react-router";
 
 const Applayout = () => {
-  const param=useParams()
+  const param = useParams();
   return (
     <main className="flex max-w-[1440px] mx-auto ">
       <LeftsideBar className="w-53 border-r" />
@@ -24,10 +24,12 @@ const Applayout = () => {
         </div>
       </div>
       {/* right sidebar */}
-      <div className={`${param=="order"&& hidden} border-l h-300 w-70 p-4 flex flex-col gap-12`}>
-        <CustomDataBox data={Notification} />
-        <CustomDataBox data={Activities} />
-        <CustomDataBox data={Contacts} />
+      <div
+        className="hidden sm:flex flex-col border-l  w-70 p-4  gap-12"
+      >
+        <CustomDataBox className="" data={Notification} />
+        <CustomDataBox className="" data={Activities} />
+        <CustomDataBox className="" data={Contacts} />
       </div>
     </main>
   );

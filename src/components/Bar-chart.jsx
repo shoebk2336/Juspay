@@ -2,7 +2,7 @@
 
 import { TrendingUp } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
-
+import { cn } from "@/lib/utils";
 import {
   Card,
   CardContent,
@@ -50,18 +50,15 @@ const chartConfig = {
   },
 };
 
-export function ChartBarStacked() {
+export function ChartBarStacked({ className }) {
   return (
-    <Card className="w-108 h-63 ">
+    <Card className={cn(" h-63 gap-2", className)}>
       <CardHeader className="">
         <CardTitle className="text-left  ">Projections vs Actuals</CardTitle>
         {/* <CardDescription className='text-left'>January - June 2025</CardDescription> */}
       </CardHeader>
       <CardContent className=" pl-0">
-        <ChartContainer
-          config={chartConfig}
-          className="min-h-[165px]  h-42 w-full "
-        >
+        <ChartContainer config={chartConfig} className="w-full   h-45">
           <BarChart accessibilityLayer data={chartData} width={10}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -91,14 +88,14 @@ export function ChartBarStacked() {
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
-        {/* <div className="flex gap-2 leading-none font-medium">
+      {/* <CardFooter className="flex-col items-start gap-2 text-sm"> */}
+      {/* <div className="flex gap-2 leading-none font-medium">
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
           Showing Projections vs Actuals for the last 6 months
         </div> */}
-      </CardFooter>
+      {/* </CardFooter> */}
     </Card>
   );
 }

@@ -3,8 +3,9 @@
 /* src/global.css */
 @import "@fontsource/inter/index.css";
 
-html, body {
-  font-family: theme('fontFamily.sans');
+html,
+body {
+  font-family: theme("fontFamily.sans");
 }
 
 @custom-variant dark (&:is(.dark *));

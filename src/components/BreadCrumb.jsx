@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useLocation, useParams } from "react-router";
 import { SlashIcon } from "lucide-react";
 
 import {
@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 
 export function BreadcrumbWithCustomSeparator() {
+  const location=useLocation()
   return (
     <Breadcrumb className="hidden sm:flex">
       <BreadcrumbList>
@@ -24,7 +25,14 @@ export function BreadcrumbWithCustomSeparator() {
         </BreadcrumbSeparator>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="/components">Default</Link>
+
+            {location.pathname==='/order'?
+              <Link href="/order">Order</Link>:
+              <Link href="/component">Default</Link>
+
+
+            
+          }
           </BreadcrumbLink>
         </BreadcrumbItem>
         {/* <BreadcrumbSeparator>

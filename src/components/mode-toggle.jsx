@@ -8,22 +8,29 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/components/theme-provider";
+import { useEffect, useState } from "react";
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
+  // custom function
+  const [theme,settheme]=useState('dark')
+
+  useEffect(()=>{
+    setTheme(theme)
+  },[theme])
+
+  const ThemeChange=()=>{
+    if(theme==="dark"){settheme("light")}
+    else settheme("dark")
+  }
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        {/* <Button variant="secondary" className='bg-transparent  w-5 h-5 ' >
-          <Sun className="h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-          <Moon className="absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-          <span className="sr-only">Toggle theme</span>
-        </Button> */}
-        {/* <Button> */}
-        <Sun size={20} />
+      {/* <DropdownMenuTrigger asChild> */}
+        <Sun className="hover:cursor-pointer hover:p-0.5" onClick={ThemeChange} size={20} />
+
         {/* </Button> */}
-      </DropdownMenuTrigger>
+      {/* </DropdownMenuTrigger> */}
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light

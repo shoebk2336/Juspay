@@ -20,7 +20,10 @@ import SearchBar from "./SearchBar";
 
 const Header = () => {
   return (
-    <div className="h-17 w-[100%] border border-input border-l-0 border-r-0 flex justify-between gap-4 items-center p-2 sm:p-6">
+    <div
+      className="sticky top-0 z-100 bg-white dark:bg-black h-17 w-[100%] border border-input border-l-0 border-r-0 flex justify-between  items-center p-2 sm:p-6
+ "
+    >
       <div className="flex justify-between w-14 sm:w-55   items-center">
         <Sidebar size={20} />
         <Star size={20} />
