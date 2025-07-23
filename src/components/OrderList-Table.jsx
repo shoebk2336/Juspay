@@ -21,7 +21,7 @@ export function OrderListTable({ data }) {
     Rejected: "text-gray-500",
   };
   return (
-    <Table className=" ">
+    <Table className="w-full ">
       {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
       <TableHeader className="">
         <TableRow className=" ">
@@ -68,7 +68,9 @@ export function OrderListTable({ data }) {
             <TableCell className="text-[12px] py-4 text-left">
               {val.address}
             </TableCell>
-            <TableCell className="text-[12px] py-4 text-left">{val.date}</TableCell>
+            <TableCell className="text-[12px] py-4 text-left">
+              {val.date}
+            </TableCell>
             <TableCell
               className={`${statusColors[val.status]} text-[12px] py-4 text-left`}
             >

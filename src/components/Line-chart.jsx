@@ -1,22 +1,26 @@
+//
+
+// new
 "use client";
 
-import { Dot, DotIcon, TrendingUp } from "lucide-react";
-import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
-
+import { Dot, DotIcon } from "lucide-react";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+  CartesianGrid,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts";
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import { Separator } from "./ui/separator";
+import { cn } from "@/lib/utils";
 
 export const description = "A multiple line chart";
 
@@ -48,74 +52,66 @@ const chartConfig = {
   },
 };
 
-export function ChartLineMultiple() {
+export function ChartLineMultiple({ className }) {
   return (
-    <Card className="w-166 h-80">
-      <CardHeader className="flex  items-center">
-        <CardTitle className="text-left">Revenue</CardTitle>
-        <div className="flex h-5 items-center space-x-6 text-sm ml-4">
-          <Separator orientation="vertical" />
-          <div className=" gap-2 flex items-center">
-            <Dot size={30} color="#A8C5DA" />
-            Current Week <span className="font-bold">$58,211</span>
+    <Card className={cn("min-w-0 w-full", className)}>
+      <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
+        <CardTitle className="text-left text-sm">Revenue</CardTitle>
+        <div className="flex flex-wrap gap-2 sm:gap-4 text-sm">
+          <div className="flex items-center gap-1">
+            <Dot size={12} color="#A8C5DA" />
+            <span className="text-xs">Current Week</span>
+            <span className="font-bold text-sm">$58,211</span>
           </div>
-          {/* <Separator orientation="vertical" /> */}
-          <div className="flex gap-2 items-center">
-            <DotIcon size={30} color="#C6C7F8" />
-            Previous Week <span className="font-bold">$68,786</span>
+          <Separator orientation="vertical" className="hidden sm:block" />
+          <div className="flex items-center gap-1">
+            <DotIcon size={12} color="#C6C7F8" />
+            <span className="text-xs">Previous Week</span>
+            <span className="font-bold text-sm">$68,786</span>
           </div>
         </div>
-        {/* <CardDescription>January - June 2024</CardDescription> */}
       </CardHeader>
       <CardContent className="pl-0">
-        <ChartContainer config={chartConfig} className=" h-58 w-full">
-          <LineChart
-            accessibilityLayer
-            data={chartData}
-            margin={{
-              left: 12,
-              right: 12,
-            }}
-          >
-            <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              axisLine={false}
-              tickMargin={8}
-              tickFormatter={(value) => value.slice(0, 3)}
-            />
-            <YAxis tickLine={false} axisLine={false} tickMargin={8} />
-            <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-            <Line
-              dataKey="desktop"
-              type="monotone"
-              stroke="var(--color-desktop)"
-              strokeWidth={2}
-              dot={false}
-            />
-            <Line
-              dataKey="mobile"
-              type="monotone"
-              stroke="var(--color-mobile)"
-              strokeWidth={2}
-              dot={false}
-            />
-          </LineChart>
+        <ChartContainer
+          config={chartConfig}
+          className=" rounded-lg w-full max-w-full"
+        >
+          <ResponsiveContainer width="100%" height={250}>
+            <LineChart
+              data={chartData}
+              margin={{
+                left: 12,
+                right: 12,
+              }}
+            >
+              <CartesianGrid vertical={false} />
+              <XAxis
+                dataKey="month"
+                tickLine={false}
+                axisLine={false}
+                tickMargin={8}
+                tickFormatter={(value) => value.slice(0, 3)}
+              />
+              <YAxis tickLine={false} axisLine={false} tickMargin={8} />
+              <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+              <Line
+                dataKey="desktop"
+                type="monotone"
+                stroke="var(--color-desktop)"
+                strokeWidth={2}
+                dot={false}
+              />
+              <Line
+                dataKey="mobile"
+                type="monotone"
+                stroke="var(--color-mobile)"
+                strokeWidth={2}
+                dot={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
-      {/* <CardFooter>
-        <div className="flex w-full items-start gap-2 text-sm">
-          <div className="grid gap-2">
-            <div className="flex items-center gap-2 leading-none font-medium">
-              Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-            </div>
-            <div className="text-muted-foreground flex items-center gap-2 leading-none">
-              Showing total visitors for the last 6 months
-            </div>
-          </div>
-        </div>
-      </CardFooter> */}
     </Card>
   );
 }

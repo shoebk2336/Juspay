@@ -1,18 +1,22 @@
 [
   {
     "title": "New York",
-    "val": 72
+    "val": 72,
+    "color":"#95A4FC"
   },
   {
     "title": "San Francisco",
-    "val": 39
+    "val": 39,
+    "color":"#B1E3FF"
   },
   {
     "title": "Sydney",
-    "val": 25
+    "val": 25,
+    "color":"#BAEDBD"
   },
   {
     "title": "Singapore",
-    "val": 61
+    "val": 61,
+    "color":"#C6C7F8"
   }
 ]

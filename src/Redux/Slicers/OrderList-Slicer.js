@@ -5,6 +5,7 @@ const initialState = {
   orders: OrderList,
   filterOrders: [],
   sortOrders: [],
+  ordertobeDisplayed: [],
 };
 
 export const OrderListSlicer = createSlice({
@@ -16,8 +17,19 @@ export const OrderListSlicer = createSlice({
         (order) => action.payload[order.status] === true,
       );
     },
+    sort: (state, action) => {
+      if (action.payload === "az")
+        state.sortOrders = state.orders.sort((a, b) =>
+          a.user.localeCompare(b.user),
+        );
+      if (action.payload === "za")
+        state.sortOrders = state.orders.sort((a, b) =>
+          b.user.localeCompare(a.user),
+        );
+      // else state.sortOrders=[]
+    },
   },
 });
 
-export const { filter } = OrderListSlicer.actions;
+export const { filter, sort } = OrderListSlicer.actions;
 export default OrderListSlicer.reducer;
