@@ -9,8 +9,7 @@ const StatCard = ({ data, bg }) => {
   const Tcolor = id % 3 == 0 ? "black-500" : "white-500";
   return (
 
-      <Tooltip>
-        <TooltipTrigger asChild>
+      
     <Card
       // w-50 h-28
       style={{ backgroundColor: bg }}
@@ -33,14 +32,7 @@ const StatCard = ({ data, bg }) => {
         </div>
       </CardHeader>
     </Card>
-     </TooltipTrigger>
-         <TooltipContent side="top" className="bg-white dark:bg-black px-3 py-1 rounded-md">
-           <div className="text-center">
-             <h1 className="text-black dark:text-white font-bold tracking-tighter">{title}</h1>
-             <h1 className="text-black dark:text-white  border border-green-600 px-3 rounded-2xl my-1 bg-green-600">{score}</h1>
-           </div>
-         </TooltipContent>
-       </Tooltip>
+    
   );
 };
 

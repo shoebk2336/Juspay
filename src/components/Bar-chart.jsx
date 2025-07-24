@@ -52,7 +52,7 @@ const chartConfig = {
 
 export function ChartBarStacked({ className }) {
   return (
-    <Card className={cn(" h-63 gap-2", className)}>
+    <Card className={cn("  gap-2", className)}>
       <CardHeader className="">
         <CardTitle className="text-left  ">Projections vs Actuals</CardTitle>
         {/* <CardDescription className='text-left'>January - June 2025</CardDescription> */}

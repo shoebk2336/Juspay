@@ -16,7 +16,7 @@ import LeftPageAccord from "../../Mock-Data/Left-PageAccord.json";
 import { Link } from "react-router";
 const LeftsideBar = () => {
   return (
-    <div className="hidden sm:block w-53 h-300 border-r border-input p-2">
+    <div className="hidden sm:block w-53  border-r border-input p-2">
       <div className=" flex items-center gap-2">
         <Avatar className="aspect-square w-6 h-6 ">
           <AvatarImage src="https://github.com/shadcn.png" />

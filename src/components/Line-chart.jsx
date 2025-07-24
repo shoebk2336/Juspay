@@ -1,6 +1,7 @@
-//
+// 
 
 // new
+
 "use client";
 
 import { Dot, DotIcon } from "lucide-react";
@@ -71,12 +72,10 @@ export function ChartLineMultiple({ className }) {
           </div>
         </div>
       </CardHeader>
-      <CardContent className="pl-0">
-        <ChartContainer
-          config={chartConfig}
-          className=" rounded-lg w-full max-w-full"
-        >
-          <ResponsiveContainer width="100%" height={250}>
+
+      <CardContent className="pl-0 min-h-[300px]">
+        <ChartContainer config={chartConfig} className="rounded-lg w-full max-w-full">
+          <ResponsiveContainer width="100%" aspect={2}>
             <LineChart
               data={chartData}
               margin={{
