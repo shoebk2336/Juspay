@@ -9,15 +9,15 @@ const Icontext = ({ data }) => {
   const { icon, rounded, heading, subHead } = data;
   const Icon = Icons[icon];
   return (
-    <div className=" flex items-center  gap-2 ">
+    <div className="
+    hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer
+    flex items-center  gap-2 ">
       <div
         className={`flex justify-center items-center aspect-square p-1 bg-[#E3F5FF] rounded-${rounded}`}
       >
         <Icon color="black" size={16} />
       </div>
-      {/* <div className="relative right-0 flex h-5 items-center  text-sm ml-4">
-          <Separator orientation="vertical" className="relative right-9.5 top-7" />
-        </div> */}
+      
       <div className="grid text-left">
         <h1 className="text-[11px]">{heading}</h1>
         <p className="text-gray-400 text-[10px]">{subHead}</p>

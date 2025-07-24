@@ -263,11 +263,11 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-6 overflow-x-hidden max-w-screen-xl mx-auto px-4">
+    <div className=" flex flex-col gap-6 overflow-x-hidden  mx-auto px-4">
       <h1 className="text-sm font-bold text-left mt-4">eCommerce</h1>
 
       {/* Stats and Bar Chart */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 min-w-0">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6 min-w-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 min-w-0">
           {stats?.map((stat, index) => {
             const bg =
@@ -286,7 +286,7 @@ const LandingPage = () => {
       <div className="flex flex-col sm:flex-row justify-between gap-6 min-w-0">
         <ChartLineMultiple className="w-full sm:flex-1 min-w-0" />
         {/* revenue */}
-        <Card className="w-full sm:max-w-[200px] min-w-0">
+        <Card className="w-full sm:max-w-1/4 min-w-0">
           <CardHeader>
             <CardTitle className="text-left text-sm">
               Revenue by Location
@@ -295,7 +295,7 @@ const LandingPage = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <img
-              className="w-[70%] max-w-full h-40 sm:h-22 m-auto 
+              className="  w-[70%] max-w-full h-40 sm:h-[25%] m-auto 
               hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer
               "
               src="worldMap.png"
@@ -317,7 +317,7 @@ const LandingPage = () => {
             </TooltipContent>
           </Tooltip>
           
-          <CardContent>
+          <CardContent className="  ">
             <div className="flex flex-col gap-4">
               {revenuestats?.map((stat, index) => (
                 <CustomStrip key={index} data={stat} />
@@ -328,8 +328,8 @@ const LandingPage = () => {
       </div>
 
       {/* Table and Radial Chart */}
-      <div className="flex flex-col gap-6 sm:flex-row min-w-0">
-        <Card className="flex flex-col sm:basis-3/4 w-full min-w-0">
+      <div className="  flex flex-col sm:flex-row gap-6 w-full">
+        <Card className="sm:basis-1/1 w-full min-w-0  ">
           <CardHeader>
             <CardTitle className="text-left">Top Selling Products</CardTitle>
           </CardHeader>
@@ -338,7 +338,7 @@ const LandingPage = () => {
           </CardContent>
         </Card>
         {/* radial */}
-        <Card className="w-full sm:max-w-[200px] min-w-0">
+        <Card className="w-full sm:max-w-1/4 min-w-0">
           <CardHeader>
             <CardTitle className="text-left">Total Sales</CardTitle>
           </CardHeader>

@@ -13,7 +13,7 @@ import { useParams } from "react-router";
 const Applayout = () => {
   const param = useParams();
   return (
-    <main className="flex max-w-[1440px] mx-auto ">
+    <main className="flex  mx-auto ">
       <LeftsideBar className="w-53 border-r" />
 
       <div className="flex flex-col flex-1">
@@ -25,7 +25,7 @@ const Applayout = () => {
       </div>
       {/* right sidebar */}
       <div
-        className="hidden sm:flex flex-col border-l  w-70 p-4  gap-12"
+        className="hidden sm:flex flex-col border-l  min-w-70 p-4  gap-12"
       >
         <CustomDataBox className="" data={Notification} />
         <CustomDataBox className="" data={Activities} />
