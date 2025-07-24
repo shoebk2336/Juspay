@@ -1,6 +1,4 @@
-// 
 
-// new
 
 "use client";
 
@@ -55,7 +53,7 @@ const chartConfig = {
 
 export function ChartLineMultiple({ className }) {
   return (
-    <Card className={cn("min-w-0 w-full", className)}>
+    <Card className={cn("  max-h-[500px]  min-w-0 w-full", className)}>
       <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
         <CardTitle className="text-left text-sm">Revenue</CardTitle>
         <div className="flex flex-wrap gap-2 sm:gap-4 text-sm">
@@ -73,10 +71,11 @@ export function ChartLineMultiple({ className }) {
         </div>
       </CardHeader>
 
-      <CardContent className="pl-0 min-h-[300px]">
-        <ChartContainer config={chartConfig} className="rounded-lg w-full max-w-full">
-          <ResponsiveContainer width="100%" aspect={2}>
+      <CardContent className="pl-0 min-h-[80%] ">
+        <ChartContainer config={chartConfig} className="max-h-1/1  rounded-lg w-full max-w-full">
+          <ResponsiveContainer className=" max-h-1/1" width="100%" aspect={2}>
             <LineChart
+            
               data={chartData}
               margin={{
                 left: 12,
