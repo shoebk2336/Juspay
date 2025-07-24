@@ -53,7 +53,7 @@ const chartConfig = {
 
 export function ChartLineMultiple({ className }) {
   return (
-    <Card className={cn(" max-h-[500px]  min-w-0 w-full", className)}>
+    <Card className={cn("  max-h-[500px]  min-w-0 w-full", className)}>
       <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
         <CardTitle className="text-left text-sm">Revenue</CardTitle>
         <div className="flex flex-wrap gap-2 sm:gap-4 text-sm">
